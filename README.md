@@ -1,16 +1,18 @@
 # Somkereki's Fighting Game
 
-## Tabla de contenidos
+## Table of Contents
 
+## Tech Stack 🛠
 
-## Objetivos de la app:
+## Requirements 📋
+### Basic:
 
-## Cómo descargar y usar la app 🥷
+### Extra:
 
-## Tareas pendientes 🧙
+## Features 🕹️
 
-## Funcionalidad de la App 🕹
+## How to install 🥷
 
-## Stack tecnológico 🛠
+## Pending Tasks 🧙
 
-## Cómo colaborar 🤝
+## How to contribute 🤝
