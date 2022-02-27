@@ -31,7 +31,9 @@
 </p>
 
 ## Requirements 📋
+
 ### Basic:
+
 - [ ] Select 2 Fighters
 - [ ] At least 4 possible choices / player
 - [ ] Screen that shows the characters that will fight after selected.
@@ -41,8 +43,10 @@
 - [ ] Deploy in Github Pages
 
 ### Extra:
+
 - [ ] Possibility of selecting teams of characters
 - [ ] Several attack types
+- [ ] Add audio effects
 
 ## Features 🕹️
 
