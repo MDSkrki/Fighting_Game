@@ -15,10 +15,20 @@
 
 ## Tech Stack 🛠
 
+
+
 ## Requirements 📋
 ### Basic:
+- [ ] Select 2 Fighters
+- [ ] At least 4 possible choices / player
+- [ ] Screen that shows the characters that will fight after selected.
+- [ ] One attack button (turn-based)
+- [ ] Real-time health indicator
+- [ ] Final screen showing winner
 
 ### Extra:
+- [ ] Possibility of selecting teams of characters
+- [ ] Several attack types
 
 ## Features 🕹️
 
