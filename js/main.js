@@ -1,4 +1,6 @@
 const hideStartScreen = () => {
-    let div = document.getElementById("startScreen");
-    div.style.display = 'none';
+    let startScreen = document.getElementById("startScreen");
+    let selectionScreen = document.getElementById("selectionScreen")
+    startScreen.style.display = 'none';
+    selectionScreen.style.display = 'block';
 }
