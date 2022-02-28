@@ -1,0 +1,13 @@
+/*Start screen classes*/
+.startScreen {
+    display: block;
+}
+
+.playerName {
+    display: flex;
+}
+
+/*Selection Screen classes*/
+.selectionScreen {
+    display: none
+}
