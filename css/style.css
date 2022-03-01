@@ -1,6 +1,10 @@
 /*Start screen classes*/
 .startScreen {
-    display: block;
+    background-image: url(../resources/img/Funny-Cats-Fight-Wallpaper.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    margin: 0;
+    border: 0;
 }
 
 .playerName {
