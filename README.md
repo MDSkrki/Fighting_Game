@@ -47,6 +47,10 @@
 - [ ] Possibility of selecting teams of characters
 - [ ] Several attack types
 - [ ] Add audio effects
+- [ ] Hit/miss chances
+- [ ] Animations for characters
+- [ ] Super Attack
+- [ ] Secret codes (*Special names trigger special characters*)
 
 ## Features 🕹️
 
