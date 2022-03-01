@@ -12,3 +12,7 @@
 .selectionScreen {
     display: none
 }
+
+.characterSelection {
+    display: flex;
+}
