@@ -30,5 +30,6 @@
 }
 
 .selectionToFightButton {
+    display: none;
     width: 5em;
 }
