@@ -34,7 +34,7 @@ class Character {
     }
 }
 
-const ChooseCharacter = (characterName) => {
+const player1ChooseCharacter = (characterName) => {
     let playerName = document.getElementById("player1Name").value;
     return new Character(characterName, playerName);
 }
