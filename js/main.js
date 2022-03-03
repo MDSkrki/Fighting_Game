@@ -9,15 +9,18 @@ const hideStartScreen = () => {
     let selectionScreen = document.getElementById("selectionScreen")
     startScreen.style.display = 'none';
     selectionScreen.style.display = 'block';
+}
+
+const startToSelectionScreen = () => {
+    hideStartScreen();
     startAudioPlay();
 }
 
 // Selection Screen
-
-class Character1 {
-    constructor(playerName) {
-        this.playerName = playerName;
-        this.characterName = 'Catto';
+class Character {
+    constructor(characterName, playerName) {
+        this.characterName = characterName;
+        this.playerName = playerName || 'Player 1';
         this.health = 100;
         this.dmg = 20;
     }
@@ -31,9 +34,9 @@ class Character1 {
     }
 }
 
-const choosePlayer1Character1 = () => {
+const ChooseCharacter = (characterName) => {
     let playerName = document.getElementById("player1Name").value;
-    let characterName = document.getElementById("character1Button").innerHTML;
-    return new characterName(playerName);
+    return new Character(characterName, playerName);
 }
 
+console.log(player1ChooseCharacter());
