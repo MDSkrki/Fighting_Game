@@ -45,7 +45,7 @@
 ### Extra:
 
 - [ ] Possibility of selecting teams of characters
-- [ ] Several attack types
+- [x] Several attack types
 - [x] Add audio effects
 - [ ] Hit/miss chances
 - [ ] Animations for characters
