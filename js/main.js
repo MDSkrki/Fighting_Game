@@ -82,6 +82,13 @@ const chooseCharacterPlayer2 = (characterName) => {
     return new characterName(playerName);
 }
 
+const healthIndicatorUpdater = () => {
+    let player1HealthIndicator = document.querySelector(".player1HealthIndicator");
+    let player2HealthIndicator = document.querySelector(".player2HealthIndicator");
+    player1HealthIndicator.innerHTML = player1.health;
+    player2HealthIndicator.innerHTML = player2.health;
+}
+
 const hideSelectionScreen = () => {
     let selectionScreen = document.getElementById("selectionScreen");
     let fightScreen = document.getElementById("fightScreen");
@@ -131,7 +138,7 @@ const victoryChecker = (attacker, defender) => {
 }
 
 const attack = (attacker, defender) => {
-    let initialDamage = attacker.attack()
+    let initialDamage = attacker.attack();
     let filteredDamage = defender.defense - initialDamage;
     if (filteredDamage <= 0) {
         defender.health -= Math.abs(filteredDamage);
@@ -140,5 +147,6 @@ const attack = (attacker, defender) => {
         defender.defense -= initialDamage;
     }
     victoryChecker(attacker, defender);
+    healthIndicatorUpdater();
     console.log(player1, player2);
 }
