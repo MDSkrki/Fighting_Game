@@ -40,5 +40,11 @@
 /*Fight Screen selectors*/
 
 .fightScreen {
-    display: block;
+    display: none;
+}
+
+/*Winner Screen selectors*/
+
+.winnerScreen {
+ display: none;
 }

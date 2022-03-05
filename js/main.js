@@ -51,6 +51,7 @@ class NinjaMeow extends Character {
 const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 let player1;
 let player2;
+let winner;
 
 // Start Screen
 const startAudioPlay = () => {
@@ -85,7 +86,7 @@ const hideSelectionScreen = () => {
     let selectionScreen = document.getElementById("selectionScreen");
     let fightScreen = document.getElementById("fightScreen");
     selectionScreen.style.display = 'none';
-    fightScreen.style.displa = 'block';
+    fightScreen.style.display = 'block';
 }
 
 const fightAudioPlay = () => {
@@ -103,10 +104,29 @@ const selectionToFightScreen = () => {
 }
 
 // Fight Screen
+
+const hideFightScreen = () => {
+    let fightScreen = document.getElementById("fightScreen");
+    let winnerScreen = document.getElementById("winnerScreen");
+    fightScreen.style.display = 'none';
+    winnerScreen.style.display = 'block';
+}
+
+const winnerAudioPlay = () => {
+    let audio = document.getElementById("winnerAudio");
+    audio.play();
+}
+
+const fightToWinnerScreen = () => {
+    hideFightScreen();
+    winnerAudioPlay();
+}
+
 const victoryChecker = (attacker, defender) => {
     if (defender.health <= 0) {
         console.log(defender.playerName + ' is ded');
-        return attacker.playerName;
+        winner = attacker.playerName;
+        fightToWinnerScreen()
     }
 }
 
