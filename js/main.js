@@ -103,6 +103,13 @@ const selectionToFightScreen = () => {
 }
 
 // Fight Screen
+const victoryChecker = (attacker, defender) => {
+    if (defender.health <= 0) {
+        console.log(defender.playerName + ' is ded');
+        return attacker.playerName;
+    }
+}
+
 const attack = (attacker, defender) => {
     let initialDamage = attacker.attack()
     let filteredDamage = defender.defense - initialDamage;
@@ -112,9 +119,6 @@ const attack = (attacker, defender) => {
     } else {
         defender.defense -= initialDamage;
     }
-    if (defender.health <= 0) {
-        console.log(defender.playerName + ' is ded');
-        return defender.playerName;
-    }
+    victoryChecker(attacker, defender);
     console.log(player1, player2);
 }
