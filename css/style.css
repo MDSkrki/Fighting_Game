@@ -1,4 +1,4 @@
-/*Start screen classes*/
+/*Start screen selectors*/
 /*
 .startScreen {
     background-image: url(../resources/img/Funny-Cats-Fight-Wallpaper.jpg);
@@ -12,7 +12,7 @@
 */
 
 
-/*Selection Screen classes*/
+/*Selection Screen selectors*/
 .selectionScreen {
     display: none
 }
@@ -35,4 +35,10 @@
 
 .selectionToFightButton {
     width: 5em;
+}
+
+/*Fight Screen selectors*/
+
+.fightScreen {
+    display: block;
 }
