@@ -34,8 +34,8 @@
 
 ### Basic:
 
-- [ ] Select 2 Fighters
-- [ ] At least 4 possible choices / player
+- [ x ] Select 2 Fighters
+- [ x ] At least 4 possible choices / player
 - [ ] Screen that shows the characters that will fight after selected.
 - [ ] One attack button (turn-based)
 - [ ] Real-time health indicator

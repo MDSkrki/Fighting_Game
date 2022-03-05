@@ -101,3 +101,6 @@ const selectionToFightScreen = () => {
         alert('Both players have to choose a character!');
     }
 }
+
+// Fight Screen
+

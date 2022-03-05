@@ -16,8 +16,9 @@
 
 <body>
     <main>
-        <section id="startScreen" class="startScreen">
-            <div>
+        <section id="startScreen" class="bg-image startScreen">
+            <div class="container d-flex align-items-center justify-content-center text-center h-100">
+                <!-- <img class="bg-image" src="resources/img/Funny-Cats-Fight-Wallpaper.jpg" alt=""> -->
                 <button onclick="startToSelectionScreen()">Start Button</button>
                 <audio id="startAudio"
                     src="resources/audio/SW_Vader_You_Will_Meet_Your_Destiny_Sound_Effect.mp3"></audio>
@@ -56,7 +57,14 @@
             </div>
         </section>
         <section id="fightScreen" class="fightScreen">
-
+            <div class="player1HealthBar"></div>
+            <div class="player2HealthBar"></div>
+            <div class="player1"></div>
+            <div class="player2"></div>
+            <div class="player1AttackButton"></div>
+            <div class="player1MeowButton"></div>
+            <div class="player2AttackButton"></div>
+            <div class="player2MeowButton"></div>
         </section>
     </main>
 
