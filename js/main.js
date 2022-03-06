@@ -129,6 +129,19 @@ const fightToWinnerScreen = () => {
     winnerAudioPlay();
 }
 
+const toggleButtons = () => {
+    let buttonsPlayer1 = document.getElementById("buttonsPlayer1");
+    let buttonsPlayer2 = document.getElementById("buttonsPlayer2");
+
+    if (buttonsPlayer1.style.display == 'flex') {
+        buttonsPlayer1.style.display = 'none';
+        buttonsPlayer2.style.display = 'flex'
+    } else {
+        buttonsPlayer1.style.display = 'flex';
+        buttonsPlayer2.style.display = 'none';
+    }
+}
+
 const victoryChecker = (attacker, defender) => {
     if (defender.health <= 0) {
         console.log(defender.playerName + ' is ded');
@@ -148,5 +161,12 @@ const attack = (attacker, defender) => {
     }
     victoryChecker(attacker, defender);
     healthIndicatorUpdater();
+    toggleButtons();
+    console.log(player1, player2);
+}
+
+const meow = (player) => {
+    player.meow();
+    toggleButtons();
     console.log(player1, player2);
 }
