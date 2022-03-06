@@ -60,6 +60,7 @@
 - Stats and character name in Fight Screen
 - Image name and stats of chosen characters in Selection Screen
 - Make things properly visible in selection, fight, and winner screens
-- Change button aesthetics in Winner Screen (and hide the secret button a bit)
+- Add and associate images for each character
+- Improve readability of winning statement
 
 ## How to contribute 🤝
