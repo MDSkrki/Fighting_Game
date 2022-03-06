@@ -104,9 +104,12 @@
         </section>
         <section id="winnerScreen" class="winnerScreen">
             <div>
-                <p id="winnerText" class="winnerText container"></p>
-                <button onclick="window.location.reload()">Play again?</button>
-                <button onclick="secret()">Secret button</button>
+                <p id="winnerText" class="winnerText display-1"></p>
+                <div class="d-flex justify-content-evenly">
+                    <button onclick="window.location.reload()" class="btn btn-primary">Play again?</button>
+                    <button onclick="secret()" class="btn btn-outline-secondary">Secret button</button>
+                </div>
+                
             </div>
         </section>
     </main>
