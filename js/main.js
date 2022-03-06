@@ -101,9 +101,15 @@ const fightAudioPlay = () => {
     audio.play();
 }
 
+const backgroundSelectionToFight = () => {
+    let background = document.getElementsByTagName("body");
+    background[0].style.backgroundImage = "url('./resources/img/cats-fighting-in-a-larder.jpg')"
+}
+
 const selectionToFightScreen = () => {
     if (player1 && player2) {
         hideSelectionScreen();
+        backgroundSelectionToFight();
         fightAudioPlay();
         healthIndicatorUpdater();
     } else {
