@@ -1,7 +1,7 @@
 // Character classes
 class Character {
     constructor(playerName) {
-        this.playerName = playerName || 'Teapot 418';
+        this.playerName = playerName;
         this.health = 100;
     }
     attack() { return this.damage }
