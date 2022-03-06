@@ -29,10 +29,6 @@ body {
     text-align: center;
 }
 
-.player1Name, .player2Name {
-    width: 20em;
-}
-
 .selectionToFightButton {
     width: 5em;
 }

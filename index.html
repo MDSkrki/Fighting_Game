@@ -26,10 +26,9 @@
         </section>
         <section id="selectionScreen" class="selectionScreen">
             <div class="player1Selection">
-                <div class="container m-4 playerName">
-                    <label for="player1Name">Player 1 Insert Name:</label>
-                    <input type="text" id="player1Name" name="player1Name" class="player1Name mx-3"
-                        placeholder="Player 1" />
+                <div class="input-group m-4 playerName">
+                    <span class="input-group-text">Player 1 Insert Name:</span>
+                    <input type="text" id="player1Name" class="form-control" value="Player 1"/>
                 </div>
 
                 <div class="characterSelection container p-4">
@@ -44,19 +43,18 @@
                 </div>
             </div>
             <div class="player2Selection">
-                <div class="container m-4 playerName">
-                    <label for="player2Name">Player 2 Insert Name:</label>
-                    <input type="text" id="player2Name" name="player2Name" class="player2Name mx-3"
-                        placeholder="Player 2" />
+                <div class="input-group m-4 playerName">
+                    <span class="input-group-text">Player 2 Insert Name:</span>
+                    <input type="text" id="player2Name" class="form-control" value="Player 2"/>
                 </div>
                 <div class="characterSelection container p-4">
-                    <button id="characterButton" class="characterButton"
+                    <button id="characterButton" class="btn btn-primary"
                         onclick="player2 = chooseCharacterPlayer2(Catto)">Catto</button>
-                    <button id="characterButton" class="characterButton"
+                    <button id="characterButton" class="btn btn-primary"
                         onclick="player2 = chooseCharacterPlayer2(Clawsy)">Clawsy</button>
-                    <button id="characterButton" class="characterButton"
+                    <button id="characterButton" class="btn btn-primary"
                         onclick="player2 = chooseCharacterPlayer2(MeowTank)">MeowTank</button>
-                    <button id="characterButton" class="characterButton"
+                    <button id="characterButton" class="btn btn-primary"
                         onclick="player2 = chooseCharacterPlayer2(NinjaMeow)">NinjaMeow</button>
                 </div>
 
