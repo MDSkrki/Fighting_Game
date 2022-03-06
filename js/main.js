@@ -178,3 +178,7 @@ const winnerText = () => {
     let winnerText = document.getElementById("winnerText");
     winnerText.innerHTML = winner + ' is the winner!!';
 }
+
+const secret = () => {
+    window.open("https://www.google.com/teapot");
+}
