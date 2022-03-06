@@ -4,8 +4,8 @@ class Character {
         this.playerName = playerName || 'Teapot 418';
         this.health = 100;
     }
-    attack() {return this.damage}
-    meow() {return this.defense += 15}
+    attack() { return this.damage }
+    meow() { return this.defense += 15 }
 }
 
 class Catto extends Character {
@@ -42,8 +42,8 @@ class NinjaMeow extends Character {
         this.damage = 10;
         this.defense = 10;
     }
-    attack() {return this.damage + getRandomInt(10, 60)}
-    meow() {return this.defense += getRandomInt(10, 30)}
+    attack() { return this.damage + getRandomInt(10, 60) }
+    meow() { return this.defense += getRandomInt(10, 30) }
 }
 
 // USEFUL GLOBAL FUNCTIONS AND VARIABLES
