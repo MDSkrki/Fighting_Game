@@ -46,6 +46,6 @@ body {
  display: none;
 }
 
-.player1Name, .player2Name, .player1HealthIndicator, .player2HealthIndicator, .winnerText {
+.player1Name, .player2Name, .player1HealthIndicator, .player2HealthIndicator, .player1DefenseIndicator, .player2DefenseIndicator, .winnerText {
     color: white;
 }

@@ -94,6 +94,11 @@ const statsUpdater = () => {
     let player2HealthIndicator = document.querySelector(".player2HealthIndicator");
     player1HealthIndicator.innerHTML = 'Health: ' + player1.health;
     player2HealthIndicator.innerHTML = 'Health: ' + player2.health;
+
+    let player1DefenseIndicator = document.querySelector(".player1DefenseIndicator");
+    let player2DefenseIndicator = document.querySelector(".player2DefenseIndicator");
+    player1DefenseIndicator.innerHTML = 'Defense: ' + player1.defense;
+    player2DefenseIndicator.innerHTML = 'Defense: ' + player2.defense;
 }
 
 const hideSelectionScreen = () => {
@@ -196,6 +201,7 @@ const meow = (player) => {
     meowAudio();
     player.meow();
     toggleButtons();
+    statsUpdater();
     console.log(player1, player2);
 }
 
