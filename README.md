@@ -31,7 +31,6 @@
 </p>
 
 ## Requirements 📋
-
 ### Basic:
 
 - [x] Select 2 Fighters
@@ -57,5 +56,10 @@
 ## How to install 🥷
 
 ## Pending Tasks 🧙
+
+- Stats and character name in Fight Screen
+- Image name and stats of chosen characters in Selection Screen
+- Make things properly visible in selection, fight, and winner screens
+- Change button aesthetics in Winner Screen (and hide the secret button a bit)
 
 ## How to contribute 🤝
