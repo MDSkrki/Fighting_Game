@@ -40,7 +40,7 @@
 - [x] One attack button (turn-based)
 - [x] Real-time health indicator
 - [x] Final screen showing winner
-- [ ] Deploy in Github Pages
+- [x] Deploy in Github Pages
 
 ### Extra:
 
