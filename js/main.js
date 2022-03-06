@@ -82,7 +82,7 @@ const chooseCharacterPlayer2 = (characterName) => {
     return new characterName(playerName);
 }
 
-const healthIndicatorUpdater = () => {
+const statsUpdater = () => {
     let player1HealthIndicator = document.querySelector(".player1HealthIndicator");
     let player2HealthIndicator = document.querySelector(".player2HealthIndicator");
     player1HealthIndicator.innerHTML = player1.health;
@@ -111,7 +111,7 @@ const selectionToFightScreen = () => {
         hideSelectionScreen();
         backgroundSelectionToFight();
         fightAudioPlay();
-        healthIndicatorUpdater();
+        statsUpdater();
     } else {
         alert('Both players have to choose a character!');
     }
@@ -179,7 +179,7 @@ const attack = (attacker, defender) => {
         defender.defense -= initialDamage;
     }
     victoryChecker(attacker, defender);
-    healthIndicatorUpdater();
+    statsUpdater();
     toggleButtons();
     console.log(player1, player2);
 }
