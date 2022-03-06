@@ -45,3 +45,7 @@ body {
 .winnerScreen {
  display: none;
 }
+
+.player1Name, .player2Name, .player1HealthIndicator, .player2HealthIndicator, .winnerText {
+    color: white;
+}

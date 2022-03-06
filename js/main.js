@@ -82,11 +82,18 @@ const chooseCharacterPlayer2 = (characterName) => {
     return new characterName(playerName);
 }
 
+const setPlayerNames = () => {
+    let player1Name = document.querySelector(".player1Name");
+    let player2Name = document.querySelector(".player2Name");
+    player1Name.innerHTML = player1.playerName;
+    player2Name.innerHTML = player2.playerName;
+}
+
 const statsUpdater = () => {
     let player1HealthIndicator = document.querySelector(".player1HealthIndicator");
     let player2HealthIndicator = document.querySelector(".player2HealthIndicator");
-    player1HealthIndicator.innerHTML = player1.health;
-    player2HealthIndicator.innerHTML = player2.health;
+    player1HealthIndicator.innerHTML = 'Health: ' + player1.health;
+    player2HealthIndicator.innerHTML = 'Health: ' + player2.health;
 }
 
 const hideSelectionScreen = () => {
@@ -108,6 +115,7 @@ const backgroundSelectionToFight = () => {
 
 const selectionToFightScreen = () => {
     if (player1 && player2) {
+        setPlayerNames();
         hideSelectionScreen();
         backgroundSelectionToFight();
         fightAudioPlay();
