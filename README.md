@@ -39,7 +39,7 @@
 - [x] Screen that shows the characters that will fight after selected.
 - [x] One attack button (turn-based)
 - [x] Real-time health indicator
-- [ ] Final screen showing winner
+- [x] Final screen showing winner
 - [ ] Deploy in Github Pages
 
 ### Extra:
