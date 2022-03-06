@@ -105,6 +105,7 @@ const selectionToFightScreen = () => {
     if (player1 && player2) {
         hideSelectionScreen();
         fightAudioPlay();
+        healthIndicatorUpdater();
     } else {
         alert('Both players have to choose a character!');
     }
