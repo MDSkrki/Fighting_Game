@@ -3,10 +3,13 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 /*Start screen selectors*/
-
 
 
 /*Selection Screen selectors*/

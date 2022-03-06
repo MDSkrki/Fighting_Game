@@ -120,6 +120,16 @@ const hideFightScreen = () => {
     winnerScreen.style.display = 'block';
 }
 
+const attackAudio = () => {
+    let audio = document.getElementById("attackAudio");
+    audio.play();
+}
+
+const meowAudio = () => {
+    let audio = document.getElementById("meowAudio");
+    audio.play();
+}
+
 const winnerAudioPlay = () => {
     let audio = document.getElementById("winnerAudio");
     audio.play();
@@ -153,6 +163,7 @@ const victoryChecker = (attacker, defender) => {
 }
 
 const attack = (attacker, defender) => {
+    attackAudio();
     let initialDamage = attacker.attack();
     let filteredDamage = defender.defense - initialDamage;
     if (filteredDamage <= 0) {
@@ -168,6 +179,7 @@ const attack = (attacker, defender) => {
 }
 
 const meow = (player) => {
+    meowAudio();
     player.meow();
     toggleButtons();
     console.log(player1, player2);
