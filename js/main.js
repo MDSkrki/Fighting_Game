@@ -147,7 +147,8 @@ const victoryChecker = (attacker, defender) => {
     if (defender.health <= 0) {
         console.log(defender.playerName + ' is ded');
         winner = attacker.playerName;
-        fightToWinnerScreen()
+        fightToWinnerScreen();
+        winnerText();
     }
 }
 
@@ -170,4 +171,10 @@ const meow = (player) => {
     player.meow();
     toggleButtons();
     console.log(player1, player2);
+}
+
+// Winner Screen
+const winnerText = () => {
+    let winnerText = document.getElementById("winnerText");
+    winnerText.innerHTML = winner + ' is the winner!!';
 }
