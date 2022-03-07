@@ -55,13 +55,13 @@ let winner;
 
 // Start Screen
 const startAudioPlay = () => {
-    let audio = document.getElementById("startAudio");
+    const audio = document.getElementById("startAudio");
     audio.play();
 }
 
 const hideStartScreen = () => {
-    let startScreen = document.getElementById("startScreen");
-    let selectionScreen = document.getElementById("selectionScreen");
+    const startScreen = document.getElementById("startScreen");
+    const selectionScreen = document.getElementById("selectionScreen");
     startScreen.style.display = 'none';
     selectionScreen.style.display = 'block';
 }
@@ -83,38 +83,38 @@ const chooseCharacterPlayer2 = (characterName) => {
 }
 
 const setPlayerNames = () => {
-    let player1Name = document.querySelector(".player1Name");
-    let player2Name = document.querySelector(".player2Name");
+    const player1Name = document.querySelector(".player1Name");
+    const player2Name = document.querySelector(".player2Name");
     player1Name.innerHTML = player1.playerName;
     player2Name.innerHTML = player2.playerName;
 }
 
 const statsUpdater = () => {
-    let player1HealthIndicator = document.querySelector(".player1HealthIndicator");
-    let player2HealthIndicator = document.querySelector(".player2HealthIndicator");
+    const player1HealthIndicator = document.querySelector(".player1HealthIndicator");
+    const player2HealthIndicator = document.querySelector(".player2HealthIndicator");
     player1HealthIndicator.innerHTML = 'Health: ' + player1.health;
     player2HealthIndicator.innerHTML = 'Health: ' + player2.health;
 
-    let player1DefenseIndicator = document.querySelector(".player1DefenseIndicator");
-    let player2DefenseIndicator = document.querySelector(".player2DefenseIndicator");
+    const player1DefenseIndicator = document.querySelector(".player1DefenseIndicator");
+    const player2DefenseIndicator = document.querySelector(".player2DefenseIndicator");
     player1DefenseIndicator.innerHTML = 'Defense: ' + player1.defense;
     player2DefenseIndicator.innerHTML = 'Defense: ' + player2.defense;
 }
 
 const hideSelectionScreen = () => {
-    let selectionScreen = document.getElementById("selectionScreen");
-    let fightScreen = document.getElementById("fightScreen");
+    const selectionScreen = document.getElementById("selectionScreen");
+    const fightScreen = document.getElementById("fightScreen");
     selectionScreen.style.display = 'none';
     fightScreen.style.display = 'block';
 }
 
 const fightAudioPlay = () => {
-    let audio = document.getElementById("fightAudio");
+    const audio = document.getElementById("fightAudio");
     audio.play();
 }
 
 const backgroundSelectionToFight = () => {
-    let background = document.getElementsByTagName("body");
+    const background = document.getElementsByTagName("body");
     background[0].style.backgroundImage = "url('./resources/img/cats-fighting-in-a-larder.jpg')"
 }
 
@@ -133,24 +133,24 @@ const selectionToFightScreen = () => {
 // Fight Screen
 
 const hideFightScreen = () => {
-    let fightScreen = document.getElementById("fightScreen");
-    let winnerScreen = document.getElementById("winnerScreen");
+    const fightScreen = document.getElementById("fightScreen");
+    const winnerScreen = document.getElementById("winnerScreen");
     fightScreen.style.display = 'none';
     winnerScreen.style.display = 'block';
 }
 
 const attackAudio = () => {
-    let audio = document.getElementById("attackAudio");
+    const audio = document.getElementById("attackAudio");
     audio.play();
 }
 
 const meowAudio = () => {
-    let audio = document.getElementById("meowAudio");
+    const audio = document.getElementById("meowAudio");
     audio.play();
 }
 
 const winnerAudioPlay = () => {
-    let audio = document.getElementById("winnerAudio");
+    const audio = document.getElementById("winnerAudio");
     audio.play();
 }
 
@@ -160,8 +160,8 @@ const fightToWinnerScreen = () => {
 }
 
 const toggleButtons = () => {
-    let buttonsPlayer1 = document.getElementById("buttonsPlayer1");
-    let buttonsPlayer2 = document.getElementById("buttonsPlayer2");
+    const buttonsPlayer1 = document.getElementById("buttonsPlayer1");
+    const buttonsPlayer2 = document.getElementById("buttonsPlayer2");
 
     if (buttonsPlayer1.style.display == 'flex') {
         buttonsPlayer1.style.display = 'none';
@@ -207,7 +207,7 @@ const meow = (player) => {
 
 // Winner Screen
 const winnerText = () => {
-    let winnerText = document.getElementById("winnerText");
+    const winnerText = document.getElementById("winnerText");
     winnerText.innerHTML = winner + ' is the winner!!';
 }
 
