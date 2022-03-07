@@ -1,8 +1,11 @@
 # Somkereki's Fighting Game
 
+## GitHub Pages
+[Click Here to Play!](https://mdskrki.github.io/Fighting_Game/)
 ## Table of Contents
 
 - [Somkereki's Fighting Game](#somkerekis-fighting-game)
+  - [GitHub Pages](#github-pages)
   - [Table of Contents](#table-of-contents)
   - [Tech Stack 🛠](#tech-stack-)
   - [Requirements 📋](#requirements-)
