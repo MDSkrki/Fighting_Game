@@ -115,7 +115,7 @@ const fightAudioPlay = () => {
 
 const backgroundSelectionToFight = () => {
     let background = document.getElementsByTagName("body");
-    background[0].style.backgroundImage = "url('./resources/img/cats-fighting-in-a-larder.jpg')"
+    background[0].style.backgroundImage = "url('../resources/img/cats-fighting-in-a-larder.jpg')"
 }
 
 const selectionToFightScreen = () => {
